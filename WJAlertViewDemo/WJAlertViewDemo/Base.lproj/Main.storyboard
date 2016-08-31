@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzv-aH-hxv">
+                                <rect key="frame" x="70" y="120" width="133" height="50"/>
+                                <color key="backgroundColor" red="0.4849932462809643" green="0.78529510264448521" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gH9-LQ-DVb"/>
+                                </constraints>
+                                <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="addAlertView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j5a-TE-fu2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WW9-t1-NPm">
+                                <rect key="frame" x="233" y="120" width="134" height="50"/>
+                                <color key="backgroundColor" red="0.4849932462809643" green="0.78529510264448521" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="addAlertView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aBq-TA-ZIN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdn-Ox-1dn">
+                                <rect key="frame" x="397" y="120" width="133" height="50"/>
+                                <color key="backgroundColor" red="0.4849932462809643" green="0.78529510264448521" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="addAlertView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Gd-5x-yDI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="cdn-Ox-1dn" secondAttribute="trailing" constant="50" id="4xP-gf-bVO"/>
+                            <constraint firstItem="rzv-aH-hxv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="BfT-ZD-ksU"/>
+                            <constraint firstItem="WW9-t1-NPm" firstAttribute="leading" secondItem="rzv-aH-hxv" secondAttribute="trailing" constant="30" id="D6v-Uw-gY0"/>
+                            <constraint firstItem="WW9-t1-NPm" firstAttribute="centerY" secondItem="rzv-aH-hxv" secondAttribute="centerY" id="Hj3-vw-Jv1"/>
+                            <constraint firstItem="cdn-Ox-1dn" firstAttribute="width" secondItem="WW9-t1-NPm" secondAttribute="width" id="KDS-78-FUS"/>
+                            <constraint firstItem="WW9-t1-NPm" firstAttribute="width" secondItem="rzv-aH-hxv" secondAttribute="width" id="KWf-QU-kF5"/>
+                            <constraint firstItem="rzv-aH-hxv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="Qz4-M5-0bn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cdn-Ox-1dn" secondAttribute="trailing" constant="50" id="UMi-qP-JHr"/>
+                            <constraint firstItem="WW9-t1-NPm" firstAttribute="height" secondItem="rzv-aH-hxv" secondAttribute="height" id="Utb-DW-gog"/>
+                            <constraint firstItem="cdn-Ox-1dn" firstAttribute="centerY" secondItem="WW9-t1-NPm" secondAttribute="centerY" id="VNr-gn-egm"/>
+                            <constraint firstItem="cdn-Ox-1dn" firstAttribute="leading" secondItem="WW9-t1-NPm" secondAttribute="trailing" constant="30" id="g2N-is-3rw"/>
+                            <constraint firstItem="cdn-Ox-1dn" firstAttribute="centerY" secondItem="rzv-aH-hxv" secondAttribute="centerY" id="mLh-13-ilx"/>
+                            <constraint firstItem="cdn-Ox-1dn" firstAttribute="height" secondItem="WW9-t1-NPm" secondAttribute="height" id="zpl-ir-KWH"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="UMi-qP-JHr"/>
+                                <exclude reference="VNr-gn-egm"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="268"/>
+        </scene>
+    </scenes>
+</document>
