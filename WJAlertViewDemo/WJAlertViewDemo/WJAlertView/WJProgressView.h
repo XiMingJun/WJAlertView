@@ -28,18 +28,17 @@ typedef NS_ENUM(NSInteger,WJProgressViewShapeType) {
 @end
 
 @interface WJProgressView : UIView{
-
-//    long _currentValue;
+    
+    //    long _currentValue;
     NSTimer *_timer;
 }
 @property (nonatomic, retain) CAShapeLayer *animationLayer;
 @property (nonatomic, weak) id <WJProgressDelegate> animationDelegate;
 @property (nonatomic, assign) float progress;//进度(100为单位)
-@property (nonatomic,assign) long currentValue;
+@property (nonatomic,assign) float currentValue;
 @property (nonatomic, retain) UIColor *progressColor;//进度条前景色
 @property (nonatomic, assign) WJProgressViewShapeType progressShape;
 @property (nonatomic, assign)float  progressCircleRadius;//弧形进度条半径
-@property (nonatomic, assign)float  speed;//绘制速度
 /**
  *  初始化方法1
  *

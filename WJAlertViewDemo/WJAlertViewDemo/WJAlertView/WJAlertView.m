@@ -565,7 +565,6 @@
     _progressView.layer.borderColor  = [_progressView.progressColor CGColor];
     _progressView.layer.borderWidth  = 1.0f;
     _progressView.clipsToBounds      = YES;
-    _progressView.speed              = SCREEN_WIDTH / 3;
     [self addSubview:_progressView];
 
     _progressLabel                   = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_progressView.frame) + 15, self.frame.size.width, 30)];
