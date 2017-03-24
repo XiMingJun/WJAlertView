@@ -23,7 +23,7 @@ typedef NS_ENUM(NSInteger,WJProgressViewShapeType) {
 
 - (void)progressViewAnimationDidStop:(WJProgressView *)progressView;
 
-- (void)progressViewAnimationDidStart:(WJProgressView *)progressView currentProgressValue:(long)currentProgress;
+- (void)progressViewAnimationDidStart:(WJProgressView *)progressView currentProgressValue:(float)currentProgress;
 
 @end
 
@@ -37,8 +37,10 @@ typedef NS_ENUM(NSInteger,WJProgressViewShapeType) {
 @property (nonatomic, assign) float progress;//进度(100为单位)
 @property (nonatomic,assign) float currentValue;
 @property (nonatomic, retain) UIColor *progressColor;//进度条前景色
+@property (nonatomic,retain) UIColor *backColor;//背景色
 @property (nonatomic, assign) WJProgressViewShapeType progressShape;
 @property (nonatomic, assign)float  progressCircleRadius;//弧形进度条半径
+@property (nonatomic, assign)float  speed;//绘制速度
 /**
  *  初始化方法1
  *

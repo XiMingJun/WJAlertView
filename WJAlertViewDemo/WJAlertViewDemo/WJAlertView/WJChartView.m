@@ -54,17 +54,21 @@
         }
         case WJChartViewType_Line: {
             if (_dataSource) {
+                
+                
                 NSInteger sliceCount = [_dataSource numberOfSlicesInChart:self];
                 double value[sliceCount];
                 double sumValue = 0.0;
                 for (int i = 0; i < sliceCount; i++) {
                     //给各部分所占比例赋值
                     value[i] = [_dataSource chartView:self valueForSliceAtIndex:i];
-                    WJProgressView *progressView = [[WJProgressView alloc] init];
-                    progressView.progress = 100;
+                    CGRect progressViewRect =  CGRectMake(sumValue * self.frame.size.width, 0, value[i] * self.frame.size.width, self.frame.size.height);
+                    WJProgressView *progressView = [[WJProgressView alloc] initWithFrame:progressViewRect
+                                                                           progressvalue:100
+                                                                           progressColor:[UIColor clearColor]
+                                                                       progressShapeType:WJProgressViewLineShape];
                     progressView.animationDelegate = self;
-                    progressView.progressShape = WJProgressViewLineShape;
-                    progressView.frame = CGRectMake(sumValue * self.frame.size.width, 0, value[i] * self.frame.size.width, self.frame.size.height);
+                    progressView.speed = [UIScreen mainScreen].bounds.size.width/1.5;
                     [_progressViewArray addObject:progressView];
                     [self addSubview:progressView];
                     sumValue += value[i];
@@ -94,27 +98,24 @@
 # pragma mark-----WJProgressDelegate
 - (void)progressViewAnimationDidStop:(WJProgressView *)progressView{
 
+    
     if (_progressViewArray.count <= 0) {
         return;
     }
     if (_isAnimationFinished) {
+        _index = 0;
         return;
     }
     _index += 1;
     _isAnimationFinished = (_index == _progressViewArray.count - 1) ? YES : NO ;
     _index = _index % _progressViewArray.count;
-
+    NSLog(@"绘制 ---%ld---",_index);
     if (_index >= 0 && _index < _progressViewArray.count) {
-        
         WJProgressView *progressView = _progressViewArray[_index];
         [progressView drawprogressValueWithAnimation:YES];
     }
-    
-
-
 }
-- (void)progressViewAnimationDidStart:(WJProgressView *)progressView{
-
+- (void)progressViewAnimationDidStart:(WJProgressView *)progressView currentProgressValue:(float)currentProgress{
 
 }
 @end

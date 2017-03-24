@@ -16,6 +16,11 @@
 		0F2A7E0F1D76A3DA0020A48B /* WJAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2A7E0A1D76A3DA0020A48B /* WJAlertView.m */; };
 		0F2A7E101D76A3DA0020A48B /* WJChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2A7E0C1D76A3DA0020A48B /* WJChartView.m */; };
 		0F2A7E111D76A3DA0020A48B /* WJProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2A7E0E1D76A3DA0020A48B /* WJProgressView.m */; };
+		C98D42451E7CB3D3005F242C /* CommonMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = C98D42441E7CB3D3005F242C /* CommonMethods.m */; };
+		C98D424B1E7CB823005F242C /* bg_xshb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C98D42471E7CB823005F242C /* bg_xshb@2x.png */; };
+		C98D424C1E7CB823005F242C /* bg_xshb@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C98D42481E7CB823005F242C /* bg_xshb@3x.png */; };
+		C98D424D1E7CB823005F242C /* updateHead@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C98D42491E7CB823005F242C /* updateHead@2x.png */; };
+		C98D424E1E7CB823005F242C /* updatehead@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C98D424A1E7CB823005F242C /* updatehead@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +40,13 @@
 		0F2A7E0C1D76A3DA0020A48B /* WJChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJChartView.m; sourceTree = "<group>"; };
 		0F2A7E0D1D76A3DA0020A48B /* WJProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJProgressView.h; sourceTree = "<group>"; };
 		0F2A7E0E1D76A3DA0020A48B /* WJProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJProgressView.m; sourceTree = "<group>"; };
+		C98D42431E7CB3D3005F242C /* CommonMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMethods.h; sourceTree = "<group>"; };
+		C98D42441E7CB3D3005F242C /* CommonMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonMethods.m; sourceTree = "<group>"; };
+		C98D42461E7CB4BC005F242C /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		C98D42471E7CB823005F242C /* bg_xshb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_xshb@2x.png"; sourceTree = "<group>"; };
+		C98D42481E7CB823005F242C /* bg_xshb@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_xshb@3x.png"; sourceTree = "<group>"; };
+		C98D42491E7CB823005F242C /* updateHead@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "updateHead@2x.png"; sourceTree = "<group>"; };
+		C98D424A1E7CB823005F242C /* updatehead@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "updatehead@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +79,12 @@
 		0F2A7DE61D768AB60020A48B /* WJAlertViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C98D42431E7CB3D3005F242C /* CommonMethods.h */,
+				C98D42441E7CB3D3005F242C /* CommonMethods.m */,
+				C98D42471E7CB823005F242C /* bg_xshb@2x.png */,
+				C98D42481E7CB823005F242C /* bg_xshb@3x.png */,
+				C98D42491E7CB823005F242C /* updateHead@2x.png */,
+				C98D424A1E7CB823005F242C /* updatehead@3x.png */,
 				0F2A7E081D76A3DA0020A48B /* WJAlertView */,
 				0F2A7DEA1D768AB60020A48B /* AppDelegate.h */,
 				0F2A7DEB1D768AB60020A48B /* AppDelegate.m */,
@@ -98,6 +116,7 @@
 				0F2A7E0C1D76A3DA0020A48B /* WJChartView.m */,
 				0F2A7E0D1D76A3DA0020A48B /* WJProgressView.h */,
 				0F2A7E0E1D76A3DA0020A48B /* WJProgressView.m */,
+				C98D42461E7CB4BC005F242C /* Header.h */,
 			);
 			path = WJAlertView;
 			sourceTree = "<group>";
@@ -159,9 +178,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C98D424B1E7CB823005F242C /* bg_xshb@2x.png in Resources */,
+				C98D424D1E7CB823005F242C /* updateHead@2x.png in Resources */,
 				0F2A7DF71D768AB60020A48B /* LaunchScreen.storyboard in Resources */,
 				0F2A7DF41D768AB60020A48B /* Assets.xcassets in Resources */,
 				0F2A7DF21D768AB60020A48B /* Main.storyboard in Resources */,
+				C98D424C1E7CB823005F242C /* bg_xshb@3x.png in Resources */,
+				C98D424E1E7CB823005F242C /* updatehead@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F2A7E0F1D76A3DA0020A48B /* WJAlertView.m in Sources */,
+				C98D42451E7CB3D3005F242C /* CommonMethods.m in Sources */,
 				0F2A7DEF1D768AB60020A48B /* ViewController.m in Sources */,
 				0F2A7E111D76A3DA0020A48B /* WJProgressView.m in Sources */,
 				0F2A7DEC1D768AB60020A48B /* AppDelegate.m in Sources */,
@@ -324,6 +348,7 @@
 				0F2A7DFD1D768AB60020A48B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
